@@ -3,7 +3,16 @@ import "./App.css"
 
 const App = () => {
   return (
-    <div>Home </div>
+    <div>
+      <BarChart
+        height={300}
+        series={[
+          { ...seriesA, stack: 'total' },
+          { ...seriesB, stack: 'total' },
+          { ...seriesC, stack: 'total' },
+        ]}
+      />
+    </div>
   )
 }
 
